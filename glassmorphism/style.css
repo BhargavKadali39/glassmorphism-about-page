@@ -7,12 +7,14 @@ body{
     scroll-behavior: n;
 }
 
+/* Added here to block scrolling due to svg bug*/
 html, body {
     margin: 0;
     height: 100%;
     overflow: hidden
 }
 
+/* Card */
 main{
     min-height: 100vh;
     background: linear-gradient(202deg, rgb(40, 238, 228),rgb(57, 159, 228));
@@ -21,6 +23,7 @@ main{
     justify-content: center;
 }
 
+/* Glassmorphism */
 .glass{
     background: slategray;
     min-height: 80vh;
@@ -62,12 +65,13 @@ h3{
     justify-content: space-evenly;
 }
 
+/* To solve the default margin values in svg*/
 svg{
     margin-top: -400px;
     margin-bottom: -3px;
 }
 
-
+/* bubbles */
 .circle1,.circle2,.lil-bub1,.lil-bub2{
     background: rgb(0, 128, 255);
     background: linear-gradient(260deg,rgba(255, 255, 255, 0.25),
@@ -88,13 +92,6 @@ svg{
     transition: ease-in;
 }
 
-.circle1:before,
-.circle1:after{
-    content:'';
-    position:absolute;
-    box-shadow: 15px, 10px, 10px rgb(3, 0, 0);
-}
-
 .circle2{
     top: 5%;
     right: 15%;
@@ -104,6 +101,7 @@ svg{
     transition: ease-in;
 }
 
+/* Bubble inside bubble */
 .lil-bub1,.lil-bub2{
     height: 3rem;
     width: 3rem;
@@ -115,12 +113,8 @@ svg{
     box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
 }
 
-.lil-bub2{
-    box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
 
-}
-
-
+/* Bottom bubble animation */
 @keyframes move-circle1 {
     0% {
         bottom: 2%;
@@ -168,7 +162,7 @@ svg{
     }
 }
 
-
+/* Top bubble animation */
 @keyframes move-circle2 {
     0% {
         top: 5%;
