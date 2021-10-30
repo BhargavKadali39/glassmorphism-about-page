@@ -1,16 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: n;
 }
+
 html, body {
     margin: 0;
     height: 100%;
     overflow: hidden
-  }
+}
+
 main{
     min-height: 100vh;
     background: linear-gradient(202deg, rgb(40, 238, 228),rgb(57, 159, 228));
@@ -77,6 +79,36 @@ svg{
     animation-iteration-count: infinite;
     transition: ease-in;
 }
+
+.circle1:before,
+.circle1:after{
+    content:'';
+    position:absolute;
+    box-shadow: 15px, 10px, 10px rgb(3, 0, 0);
+}
+.circle2{
+    top: 5%;
+    right: 15%;
+    animation-name: move-circle2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
+}
+.lil-bub1,.lil-bub2{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 28%;
+    top: 20%;
+    opacity: 0.4;
+    box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
+}
+.lil-bub2{
+    box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
+
+}
+
 @keyframes move-circle1 {
     0% {
         bottom: 2%;
@@ -124,34 +156,7 @@ svg{
     }
 }
 
-.circle1:before,
-.circle1:after{
-    content:'';
-    position:absolute;
-    box-shadow: 15px, 10px, 10px rgb(3, 0, 0);
-}
-.circle2{
-    top: 5%;
-    right: 15%;
-    animation-name: move-circle2;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    transition: ease-in;
-}
-.lil-bub1,.lil-bub2{
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    position: absolute;
-    left: 28%;
-    top: 20%;
-    opacity: 0.4;
-    box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
-}
-.lil-bub2{
-    box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
 
-}
 @keyframes move-circle2 {
     0% {
         top: 5%;
@@ -198,4 +203,3 @@ svg{
         right: 2%;
     }
 }
-
