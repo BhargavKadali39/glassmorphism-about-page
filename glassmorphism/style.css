@@ -112,6 +112,8 @@ svg{
     box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
 }
 
+@media screen and (max-height: 720px) {
+   }
 
 /* Bottom bubble animation */
 @keyframes move-circle1 {
