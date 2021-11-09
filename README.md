@@ -1,5 +1,5 @@
 # Glassmorphism-about-page
-About page using glassmorphism with additional features;o__.ku jyhtgrf
+About page using glassmorphism with additional features.
 
 The project is mainly based on concepts of Glassmorphism and keyframes.
 
