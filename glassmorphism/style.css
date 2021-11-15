@@ -9,8 +9,7 @@ body{
 /* Added here to block scrolling due to svg bug*/
 html, body {
     margin: 0;
-    height: 100%;
-    overflow: hidden
+    overflow: hidden;
 }
 
 /* Card */
@@ -25,8 +24,8 @@ main{
 /* Glassmorphism */
 .glass{
     background: slategray;
-    min-height: 80vh;
-    width: 60%;
+    min-height: 633px;
+    width: 1000px;
     background: linear-gradient(180deg,rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.192));
     border-radius:40px;
@@ -54,7 +53,7 @@ p{
 h3{
     font-family: monospace;
     font-size: 30px;
-    margin-bottom: 10;
+    margin: 20px 0 10px 20px;
 }
 
 .items{
@@ -112,8 +111,14 @@ svg{
     box-shadow: inset -8px 14px 20px 0px rgb(255 255 255 / 83%);
 }
 
-@media screen and (max-height: 720px) {
-   }
+
+@media screen and ( max-width: 1024px ) {
+    img.mediaq { width: 300px; }
+    }
+@media screen and ( min-width: 1025px) {
+img.mediaq { width: 300px;}
+}
+img.mediaq { height: 300px; }
 
 /* Bottom bubble animation */
 @keyframes move-circle1 {
